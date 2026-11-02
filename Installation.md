@@ -15,7 +15,8 @@ This document covers downloading, installing, and verifying Python, along with s
 5. Click **Install Now** and wait for the installation to complete.
 6. Click **Close** once you see the "Setup was successful" message.
 
-*(Suggested screenshot: `Images/windows_installer.png` — installer screen showing the "Add to PATH" checkbox)*
+<!-- After taking your screenshot, save it as Images/windows_installer.png and uncomment the next line -->
+<!-- ![Windows installer with Add python.exe to PATH checked](Images/windows_installer.png) -->
 
 ### macOS
 
@@ -29,8 +30,6 @@ Alternatively, using [Homebrew](https://brew.sh/):
 ```bash
 brew install python3
 ```
-
-*(Suggested screenshot: `Images/macos_installer.png` — macOS installation wizard)*
 
 ### Linux (Debian/Ubuntu-based)
 
@@ -84,7 +83,8 @@ python hello.py
 ```
 If the message prints without errors, Python is correctly installed.
 
-*(Suggested screenshot: `Images/verify_version.png` — terminal output of `python --version`)*
+<!-- After taking your screenshot, save it as Images/verify_version.png and uncomment the next line -->
+<!-- ![Terminal showing python --version and hello.py output](Images/verify_version.png) -->
 
 ---
 

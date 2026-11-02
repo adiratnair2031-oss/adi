@@ -1,40 +1,66 @@
-# Python Installation Documentation
+# Student Marks and Grade Calculator
 
-## Mini AI Documentation Project
+## Project Description
 
-**Aim:** Use AI to prepare professional documentation.
+This program calculates the average of three marks for one student, assigns a grade using fixed thresholds, and displays the student's name, average, and grade. It is written as three Python functions: `calculate_average()`, `calculate_grade()`, and `display_result()`.
 
-**Problem Statement:** Prepare documentation for installing Python.
+## Features
 
-This project contains complete, professional documentation for installing Python, generated with the help of AI and organized into clear, navigable sections.
+- Calculates the arithmetic mean of three marks.
+- Assigns grade A, B, C, or F from the average.
+- Displays the student's name, average (rounded to two decimal places), and grade.
+- A documented version, `student_marks_documented.py`, adds a module docstring, function docstrings, and type hints without changing the program's behaviour.
 
-## Folder Structure
+## Software Requirements
+
+- Python 3
+- Visual Studio Code (used to write and run the program)
+- No external libraries are required.
+
+## How to Run in VS Code
+
+1. Open the project folder in VS Code (**File → Open Folder**).
+2. Open `student_marks.py` (or `student_marks_documented.py`).
+3. Run the file with the **Run Python File** button, or open **Terminal → New Terminal** and enter:
+
+   ```
+   python student_marks.py
+   ```
+
+   If your Windows system uses the Python launcher, use `py student_marks.py`.
+
+The marks and the student's name are assigned inside the program (`student_name`, `mark1`, `mark2`, `mark3`). The program does not ask the user for input.
+
+## Example Run
 
 ```
-Module1_Project/
-├── README.md            # This file — project overview and navigation
-├── Introduction.md      # Introduction + Software Requirements
-├── Installation.md      # Installation Steps + Verification Steps + Troubleshooting
-├── FAQ.md                # Frequently Asked Questions + Conclusion
-└── Images/                # Screenshots referenced in the documentation
+Student: Anu
+Average: 85.0
+Grade: B
 ```
 
-## How to Use This Documentation
+## Grade Thresholds
 
-1. Start with **[Introduction.md](Introduction.md)** to understand the purpose of this guide and check the software requirements.
-2. Follow **[Installation.md](Installation.md)** for step-by-step installation instructions on Windows, macOS, and Linux, followed by verification steps and troubleshooting tips.
-3. Check **[FAQ.md](FAQ.md)** for answers to common questions and a summary conclusion.
-4. Refer to the **Images/** folder for any screenshots mentioned in the guides. Add your own screenshots here using the suggested filenames referenced in Installation.md (e.g., `windows_installer.png`, `macos_installer.png`, `verify_version.png`).
-
-## Topics Covered
-
-| File | Sections Covered |
+| Average | Grade |
 |---|---|
-| Introduction.md | Introduction, Software Requirements |
-| Installation.md | Installation Steps, Verification Steps, Troubleshooting |
-| FAQ.md | Frequently Asked Questions, Conclusion |
+| 90 or higher | A |
+| 75 or higher and below 90 | B |
+| 50 or higher and below 75 | C |
+| Below 50 | F |
 
-## Project Notes
+## Project Structure
 
-- This documentation was prepared as part of a mini project demonstrating the use of AI tools to generate professional technical documentation.
-- Content can be customized further (e.g., adding actual screenshots to the Images folder, or expanding troubleshooting sections) as needed.
+```
+Module4_Code_Documentation/
+├── student_marks.py
+├── student_marks_documented.py
+├── README.md
+└── documentation_review.md
+```
+
+## Limitations
+
+- Only one predefined test case (Anu: 85, 78, 92) is used.
+- The program handles exactly three marks for one student.
+- The marks are not checked, so values outside a valid range (for example, 150 or -20) are graded without an error.
+- The grade thresholds may not match every grading system.
